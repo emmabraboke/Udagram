@@ -26,7 +26,7 @@ jobs:
             docker tag udagram-api-user emmabraboke/udagram-api-user:v2
             
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend emmabraboke/udagram-frontend:v2
+            docker tag udagram-frontend emmabraboke/udagram-frontend:v5
             docker build -t udagram-reverseproxy ./udagram-reverseproxy
             docker tag udagram-reverseproxy emmabraboke/reverseproxy:v2
             echo "-------- All images succesfully built----------"
@@ -35,10 +35,7 @@ jobs:
             docker login -u emmabraboke -p $DOCKERPASS
 
             echo "-------------- Pushing images to dockerhub-------"
-            docker push emmabraboke/udagram-api-feed:v2
-            docker push emmabraboke/udagram-api-user:v2
-            docker push emmabraboke/udagram-frontend:v2
-            docker push emmabraboke/reverseproxy:v2
+            docker push emmabraboke/udagram-frontend:v5
 workflows:
   default:
     jobs:
