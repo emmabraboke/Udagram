@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend-user
-        image: docker.io/emmabraboke/udagram-api-user:v3
+        image: docker.io/emmabraboke/udagram-api-user:v2
         ports:
         - containerPort: 80
         resources:
