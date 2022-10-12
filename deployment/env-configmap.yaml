@@ -5,7 +5,7 @@ metadata:
 data:
   POSTGRES_USERNAME: postgres
   POSTGRES_PASSWORD: postgres
-  POSTGRES_HOST: postgres.c3qfyjfd6rwj.us-east-2.rds.amazonaws.com
+  POSTGRES_HOST: postgresql.c3qfyjfd6rwj.us-east-2.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: my-udacity-microservice
   AWS_REGION: us-east-2
