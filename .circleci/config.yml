@@ -22,7 +22,7 @@ jobs:
             echo "--------- The images is Building ------------"
             
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend emmabraboke/udagram-frontend:v0
+            docker tag udagram-frontend emmabraboke/udagram-frontend:v1
             echo "-------- All images succesfully built----------"
             echo " ------- login in to hub--------"
             
