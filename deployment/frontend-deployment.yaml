@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/emmabraboke/udagram-frontend:v8
+        image: docker.io/emmabraboke/udagram-frontend:v7
         ports: 
         - containerPort: 80
         resources:
