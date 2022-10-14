@@ -9,6 +9,6 @@ data:
   POSTGRES_DB: postgres
   AWS_BUCKET: my-udacity-microservice
   AWS_REGION: us-east-2
-  AWS_PROFILE: Default
+  AWS_PROFILE: default
   JWT_SECRET: testing
   URL: http://localhost:8100
