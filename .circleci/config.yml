@@ -21,14 +21,14 @@ jobs:
             sudo apt install nodejs
             echo "--------- The images is Building ------------"
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend emmabraboke/udagram-frontend:v5
+            docker tag udagram-frontend emmabraboke/udagram-frontend:v6
             echo "-------- All images succesfully built----------"
             echo " ------- login in to hub--------"
             
             docker login -u emmabraboke -p $DOCKERPASS
 
             echo "-------------- Pushing images to dockerhub-------"
-            docker push emmabraboke/udagram-frontend:v5
+            docker push emmabraboke/udagram-frontend:v6
 workflows:
   default:
     jobs:
