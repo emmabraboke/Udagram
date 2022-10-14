@@ -21,7 +21,7 @@ jobs:
             sudo apt install nodejs
             echo "--------- The images is Building ------------"
             docker build -t udagram-frontend ./udagram-frontend
-            docker tag udagram-frontend emmabraboke/udagram-frontend:v2
+            docker tag udagram-frontend emmabraboke/udagram-frontend:v3
             echo "-------- All images succesfully built----------"
             echo " ------- login in to hub--------"
             
